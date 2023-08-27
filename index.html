@@ -12,13 +12,13 @@
             background-color: #f4f4f4;
         }
         header {
-            background-color: rgb(78, 10, 206);
+            background-color: rgb(105, 3, 223);
             color: white;
             text-align: center;
             padding: 10px;
         }
         nav {
-            background-color: rgb(77, 0, 179);
+            background-color: rgb(41, 7, 189);
             color: white;
             padding: 5px;
             text-align: center;
@@ -26,7 +26,11 @@
         nav a {
             color: white;
             text-decoration: none;
-            margin: 0 10px;
+            margin: 0 15px;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #ff9800;
         }
         .container {
             max-width: 1200px;
@@ -38,9 +42,14 @@
             background-color: white;
             padding: 20px;
             border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .article {
+            border-bottom: 1px solid #eee;
+            padding: 20px 0;
         }
         footer {
-            background-color: rgb(52, 7, 216);
+            background-color: #333;
             color: white;
             text-align: center;
             padding: 10px;
@@ -49,7 +58,7 @@
 </head>
 <body>
     <header>
-        <h1>Portal Sesi Ibura</h1>
+        <h1>Portal SESI Ibura</h1>
     </header>
     <nav>
         <a href="#">Home</a>
@@ -59,16 +68,16 @@
     </nav>
     <div class="container">
         <div class="content">
-            <!-- Aqui você pode adicionar o conteúdo das notícias, eventos, etc. -->
-            <h2>Últimas Notícias</h2>
-            <article>
-                <h3>Título da Notícia</h3>
-                <p>Conteúdo da notícia...</p>
-            </article>
-            <article>
-                <h3>Outro Título de Notícia</h3>
-                <p>Conteúdo da outra notícia...</p>
-            </article>
+            <div class="article">
+                <h2>Título da Primeira Notícia</h2>
+                <p>Conteúdo da primeira notícia...</p>
+                <a href="#" class="read-more">Ler mais</a>
+            </div>
+            <div class="article">
+                <h2>Título da Segunda Notícia</h2>
+                <p>Conteúdo da segunda notícia...</p>
+                <a href="#" class="read-more">Ler mais</a>
+            </div>
         </div>
     </div>
     <footer>
